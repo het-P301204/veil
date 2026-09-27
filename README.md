@@ -171,7 +171,7 @@ MCP sampling requests — where the server asks the client to make an LLM infere
 **Prerequisites:** Python 3.11+, Node.js 20+, `uv` (Python package manager)
 
 ```bash
-git clone https://github.com/patelhet04/veil.git
+git clone https://github.com/het-P301204/veil.git
 cd veil
 ```
 
