@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --color-primary-50: #eff6ff;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+
+  --color-protocol-400: #22d3ee;
+  --color-protocol-500: #06b6d4;
+
+  --color-agent-400: #a78bfa;
+  --color-agent-500: #8b5cf6;
+
+  --color-adversarial-400: #fb923c;
+  --color-adversarial-500: #f97316;
+
+  --color-verified-400: #34d399;
+  --color-verified-500: #10b981;
+
+  --color-warning-400: #fbbf24;
+  --color-warning-500: #f59e0b;
+
+  --color-critical-400: #f87171;
+  --color-critical-500: #ef4444;
+}
+
+:root {
+  --surface-base: #0f1117;
+  --surface-1: #161b27;
+  --surface-2: #1e2435;
+  --surface-3: #252d42;
+  --surface-border: #2e3855;
+  --surface-border-subtle: #1f2a3f;
+  --text-primary: #f0f4ff;
+  --text-secondary: #8892a4;
+  --text-tertiary: #4e5a6e;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 26px;
+}
+
+[data-theme="light"] {
+  --surface-base: #f8f9fb;
+  --surface-1: #ffffff;
+  --surface-2: #f1f4f9;
+  --surface-3: #e8edf5;
+  --surface-border: #e2e6ef;
+  --surface-border-subtle: #eef1f7;
+  --text-primary: #1a1f2e;
+  --text-secondary: #4a5568;
+  --text-tertiary: #718096;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: var(--surface-base);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--surface-1); }
+::-webkit-scrollbar-thumb { background: var(--surface-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
+
+/* Surface utilities */
+.surface-base { background: var(--surface-base); }
+.surface-1 { background: var(--surface-1); }
+.surface-2 { background: var(--surface-2); }
+.surface-3 { background: var(--surface-3); }
+.border-subtle { border-color: var(--surface-border); }
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-tertiary { color: var(--text-tertiary); }
